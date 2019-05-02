@@ -1,6 +1,6 @@
 # data-collection-project-19
 
-# Topic
+## Topic
 Users' satisfaction about Dalarna University's Homepage
 
 ## Timeline
