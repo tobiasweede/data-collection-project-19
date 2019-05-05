@@ -17,8 +17,7 @@
 \usepackage{hyperref}
 \usepackage{url}
 \usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
-\usepackage{tikz}
-\usetikzlibrary{shapes,arrows}
+\usepackage{lipsum}
 
 \begin{document}
 	
@@ -30,7 +29,7 @@
 	\bfseries\Large Authors: Péter Tempfli, Tobias Weiß\\
 	\{v19pette, v18tobwe\}@du.se
 	\\ \\
-	\includegraphics[]{/home/homaar/git/studsweden/98_oop/mini-project/report/du-logo}\\
+	\includegraphics[]{figures/du-logo.jpg}\\
 }
 
 \maketitle
@@ -38,19 +37,32 @@
 \vspace{25px}
 
 \section{Abstract}
+\lipsum[1]
+\vspace{10px}
+\textbf{Keywords: foo bar}
 
 \section{Introduction}
+\lipsum[2-5] \cite{Turban:2010:DSB:1840968}
 
 \section{Research Question}
+\lipsum[5-10]
 
-\section{Introduction}
+\section{Methodology}
+
 
 \begin{figure}[H]
     \centering
-    %\includegraphics[width=0.7\textwidth]{spiegel.png}
+    \includegraphics[width=0.7\textwidth]{figures/typed-of-webmining.png}
     \caption{dummy}
     \label{fig:XXX}
-    
 \end{figure}
+
+\section{Conclusion}
+\lipsum[20-30]
+
+\section{References}
+\bibliographystyle{ieeetr}
+\renewcommand\refname{\vskip -1cm}
+\bibliography{ST3012_project_report_v19pette_v18tobwe}
 
 \end{document}
