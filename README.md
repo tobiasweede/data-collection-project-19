@@ -29,6 +29,9 @@ The population is estimated. We assume to have access to historic log data and e
 ## Supervisor
 Reuben (rla@du.se)
 
+## Survey
+* https://docs.google.com/forms/d/1O0CetflSOlQMYOR_DYKft6fCkrlDRHGJjaRG5-i8kQE/edit
+
 ## Presentation
 * https://docs.google.com/presentation/d/1Hu37McY5pwHgHG2vhRhcrcAiODQBFVBZHP5_JElZ6TE/edit?usp=sharing
 
