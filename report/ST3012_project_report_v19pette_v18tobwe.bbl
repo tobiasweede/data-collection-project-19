@@ -1,8 +1,38 @@
 \begin{thebibliography}{1}
 
-\bibitem{Turban:2010:DSB:1840968}
-E.~Turban, R.~Sharda, and D.~Delen, {\em Decision Support and Business
-  Intelligence Systems}.
-\newblock Upper Saddle River, NJ, USA: Prentice Hall Press, 9th~ed., 2010.
+\bibitem{sofaer1999qualitative}
+S.~Sofaer, ``Qualitative methods: what are they and why use them?,'' {\em
+  Health services research}, vol.~34, no.~5 Pt 2, p.~1101, 1999.
+
+\bibitem{likert1932technique}
+R.~Likert, ``A technique for the measurement of attitudes.,'' {\em Archives of
+  psychology}, 1932.
+
+\bibitem{cummins2000we}
+R.~A. Cummins and E.~Gullone, ``Why we should not use 5-point likert scales:
+  The case for subjective quality of life measurement,'' in {\em Proceedings,
+  second international conference on quality of life in cities}, vol.~74,
+  p.~93, 2000.
+
+\bibitem{chimi2009likert}
+C.~J. Chimi and D.~L. Russell, ``The likert scale: A proposal for improvement
+  using quasi-continuous variables,'' in {\em Information Systems Education
+  Conference, Washington, DC}, pp.~1--10, 2009.
+
+\bibitem{gehringer2010daily}
+E.~F. Gehringer, ``Daily course evaluation with google forms,'' in {\em ASEE,
+  American Society for Engineering Education Annual Conference \& Exposition},
+  vol.~27, 2010.
+
+\bibitem{fan1962development}
+C.~Fan, M.~E. Muller, and I.~Rezucha, ``Development of sampling plans by using
+  sequential (item by item) selection techniques and digital computers,'' {\em
+  Journal of the American Statistical Association}, vol.~57, no.~298,
+  pp.~387--402, 1962.
+
+\bibitem{bergstrand1983bias}
+R.~Bergstrand, A.~Vedin, C.~Wilhelmsson, and L.~Wilhelmsen, ``Bias due to
+  non-participation and heterogenous sub-groups in population surveys,'' {\em
+  Journal of chronic diseases}, vol.~36, no.~10, pp.~725--728, 1983.
 
 \end{thebibliography}

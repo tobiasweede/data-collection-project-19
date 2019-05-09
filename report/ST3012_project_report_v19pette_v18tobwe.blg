@@ -3,44 +3,44 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: ST3012_project_report_v19pette_v18tobwe.aux
 The style file: ieeetr.bst
 Database file #1: ST3012_project_report_v19pette_v18tobwe.bib
-You've used 1 entry,
+You've used 7 entries,
             1876 wiz_defined-function locations,
-            484 strings with 3728 characters,
-and the built_in function-call counts, 206 in all, are:
-= -- 16
-> -- 11
+            527 strings with 4868 characters,
+and the built_in function-call counts, 1762 in all, are:
+= -- 172
+> -- 53
 < -- 0
-+ -- 4
-- -- 3
-* -- 15
-:= -- 39
-add.period$ -- 2
-call.type$ -- 1
-change.case$ -- 1
++ -- 21
+- -- 14
+* -- 117
+:= -- 249
+add.period$ -- 7
+call.type$ -- 7
+change.case$ -- 7
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 9
-empty$ -- 21
-format.name$ -- 3
-if$ -- 46
+cite$ -- 7
+duplicate$ -- 105
+empty$ -- 183
+format.name$ -- 14
+if$ -- 435
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 2
-newline$ -- 7
-num.names$ -- 1
-pop$ -- 5
+int.to.str$ -- 7
+missing$ -- 7
+newline$ -- 24
+num.names$ -- 7
+pop$ -- 29
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1
+skip$ -- 65
 stack$ -- 0
-substring$ -- 0
-swap$ -- 1
+substring$ -- 95
+swap$ -- 39
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 1
-width$ -- 2
-write$ -- 12
+while$ -- 18
+width$ -- 8
+write$ -- 71
