@@ -58,6 +58,9 @@ Users' satisfaction is a very broad topic and the scope has to be narrowed down 
 	\item If "find personal" is accessed, then the path is intuitive and quick?
 	\item If "find personal" page is visited, then the required data is found quickly?
 	\item If "find personal" page is visited, then a up-to-date front-end is displayed?
+	\item If a filter is used, is it intuitive to add the needed one?
+	\item If more than one filter is needed, is it clear what is the relation between two filters?
+	\item Is it intuitive to remove a filter?
 \end{enumerate}
 
 In oder to answer these questions a survey among the website users is conducted.
@@ -78,6 +81,33 @@ As no previous data is available, one has to assume the most conservative P valu
 n = Z^2_\alpha \frac{P\dot(1-P)}{(\hat{p}-P)^2} = 1.96^2\frac{0.5\dot{(1-0.5)}}{0.1^2}=96 \text{ subjects}
 \label{eq:sampling-size}
 \end{equation}
+
+\subsubsection{Designing the experiment - Peter}
+In order to have a correct, measurable outcome, the environment of the experiment should be designed using well known, scientifically reliable techniques. We have to ensure the following principles:
+\begin{enumerate}
+\item \textbf{Randomization}.  We need to have objective effect, yet also need to give room for statistical inference
+\item\textbf{Replicable experiment} Our experiment should be replicable; so we can study different outcomes from the \textit{same experiment}.
+\item \textbf{Controllable} A designed experiment makes sure that the effect are caused by factors, which are known by the researchers.
+\end{enumerate}
+
+We are testing one environment, but we have more than one sub-sections in our population group. We can argue that we have \textit{at least} one dimension of sub-group in this population (status: student, teacher, researcher...); and it is also easy to see, why we could create more than one dimensions of the sub-populations (age, sex, etc..)
+
+The other dimension is the behavior which the site visitors conduct on the site -- not every visitor behaves the same way, thus some visitors experience aspect of the site, which others might not. The list of posible behaviors is probably endless, so we need to focus on very broad, but still distinctive usage patterns, such as:
+\begin{itemize}
+	\item Simple person search, user found
+	\item Simple person search, filter used
+	\item Simple person search, combination of filters used
+	\item ...
+\end{itemize}
+
+So we can see that we have \textit{at least }2 sources of variability : user group and user behavior. It is impossible to test every combination of these blocks, but if we still want to know, which block is responsible for some effect in the final outcome. For our case, if we stick with the 2-dimensional population model, the Latin Square Design is a good candidate.
+
+The LSD design orders outcome data into tables, and from these matrices builds a model, which is used for a linear regression:
+
+yi,j,c = µ + τj + βi + γc + εi,j,c
+
+If we only calculate the mean of the whole survey, we can't tell anything specific about sub-groups. However, once we have the regression ran, we have all the coefficients for every block; so in our case, we know, how much a sub-group likes more, or likes less a given feature. The linear model also tells the significance levels of these coefficients.
+
 
 \subsubsection{Data collection plan - Tobias}
 As the survey is not carried out on the full sample but just on a few show cases, we send an E-Mail or WhatsApp message with link to the Google forms document and explanation to some of our classmates.
@@ -100,10 +130,10 @@ Why (only) a on line survey. Why on line?
 %    \label{fig:XXX}
 %\end{figure}
 
-\subsubsection{Ethical considerations}
+\subsubsection{Ethical considerations} PETER
 How do we store the data? What is the problem with Google forms. (Maybe write that in a real research we would use our own form/tool!)
 
-\subsubsection{Legal considerations}
+\subsubsection{Legal considerations} PETER
 GDPR checkbox in the survery
 
 \subsubsection{Analysis plan}
