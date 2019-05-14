@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{sofaer1999qualitative}
 S.~Sofaer, ``Qualitative methods: what are they and why use them?,'' {\em
@@ -34,5 +34,28 @@ C.~Fan, M.~E. Muller, and I.~Rezucha, ``Development of sampling plans by using
 R.~Bergstrand, A.~Vedin, C.~Wilhelmsson, and L.~Wilhelmsen, ``Bias due to
   non-participation and heterogenous sub-groups in population surveys,'' {\em
   Journal of chronic diseases}, vol.~36, no.~10, pp.~725--728, 1983.
+
+\bibitem{doi:10.1080/14786440009463897}
+K.~P. F.R.S., ``X. on the criterion that a given system of deviations from the
+  probable in the case of a correlated system of variables is such that it can
+  be reasonably supposed to have arisen from random sampling,'' {\em The
+  London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science},
+  vol.~50, no.~302, pp.~157--175, 1900.
+
+\bibitem{pearson1930theory}
+K.~Pearson, J.~A. Harris, A.~E. Treloar, M.~Wilder, and K.~Pearson, ``On the
+  theory of contingency,'' {\em Journal of the American Statistical
+  Association}, vol.~25, no.~171, pp.~320--327, 1930.
+
+\bibitem{lee1988thirteen}
+J.~Lee~Rodgers and W.~A. Nicewander, ``Thirteen ways to look at the correlation
+  coefficient,'' {\em The American Statistician}, vol.~42, no.~1, pp.~59--66,
+  1988.
+
+\bibitem{desap2019}
+Eurostat, ``The europeanself assessment checklistfor survey managers.''
+  \url{https://ec.europa.eu/eurostat/documents/64157/4373903/07-Checklist-for-Survey-Managers_DESAP-EN.pdf},
+  2008.
+\newblock [Online; accessed 14-May-2019].
 
 \end{thebibliography}
