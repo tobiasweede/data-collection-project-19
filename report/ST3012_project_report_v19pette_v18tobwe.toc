@@ -10,11 +10,11 @@
 \contentsline {subsubsection}{\numberline {3.1.5}Statistical Indicators - Tobias}{5}{subsubsection.3.1.5}
 \contentsline {subsubsection}{\numberline {3.1.6}Data Quality Assurance - Tobias}{6}{subsubsection.3.1.6}
 \contentsline {subsubsection}{\numberline {3.1.7}Ethical considerations - Peter}{6}{subsubsection.3.1.7}
-\contentsline {subsubsection}{\numberline {3.1.8}Legal considerations - Peter}{6}{subsubsection.3.1.8}
-\contentsline {subsubsection}{\numberline {3.1.9}Analysis plan}{6}{subsubsection.3.1.9}
-\contentsline {section}{\numberline {4}Analysis}{7}{section.4}
-\contentsline {subsection}{\numberline {4.1}Pilot}{7}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Absolute and Relative Frequencies}{7}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}(Co-)variances}{7}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Independence}{7}{subsection.4.4}
-\contentsline {section}{\numberline {5}Conclusion}{7}{section.5}
+\contentsline {subsubsection}{\numberline {3.1.8}Legal considerations - Peter}{7}{subsubsection.3.1.8}
+\contentsline {subsubsection}{\numberline {3.1.9}Analysis plan}{8}{subsubsection.3.1.9}
+\contentsline {section}{\numberline {4}Analysis}{9}{section.4}
+\contentsline {subsection}{\numberline {4.1}Pilot}{9}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Absolute and Relative Frequencies}{9}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}(Co-)variances}{9}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Independence}{9}{subsection.4.4}
+\contentsline {section}{\numberline {5}Conclusion}{9}{section.5}
