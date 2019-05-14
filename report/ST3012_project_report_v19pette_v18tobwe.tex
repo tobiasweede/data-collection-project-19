@@ -104,7 +104,7 @@ So we can see that we have \textit{at least }2 sources of variability : user gro
 
 The LSD design orders outcome data into tables, and from these matrices builds a model, which is used for a linear regression:
 
-yi,j,c = µ + τj + βi + γc + εi,j,c
+$ y_{i,j,c} = \mu + \tau j + \beta i + \gamma c + \epsilon_{i,j,c} $
 
 If we only calculate the mean of the whole survey, we can't tell anything specific about sub-groups. However, once we have the regression ran, we have all the coefficients for every block; so in our case, we know, how much a sub-group likes more, or likes less a given feature. The linear model also tells the significance levels of these coefficients.
 
