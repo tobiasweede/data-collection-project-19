@@ -44,11 +44,6 @@
 \tableofcontents
 \newpage
 
-\section{Abstract}
-We write as very last thing
-\vspace{10px}
-\textbf{Keywords: foo bar}
-
 \section{Introduction}
 The website of an organization is its figurehead. Not long time ago, Dalarna University decided to update the website layout to cutting-edge web technologies. To set up a website is easy but who guarantees that the users are satisfied with it?
 
@@ -232,6 +227,18 @@ All questions follow the same scheme. A dummy cross table is represented by tabl
 \section{Analysis}
 
 \subsection{Pilot}
+Three students were asked to fill out the form in order to check whether the structure and questions are clear and to avoid all different forms of pitfalls. 
+
+We discovered that the e-mail address field is not verified and can contain wrong information. Furthermore, it is not checked if the person already filled a form. This could be solved via a limitation to one response (see figure \ref{fig:response-limit}). The problem with it is that  subjects need a Google account to fill the form if this option is selected. In reality, the suggested pop-up on the website should have a token which becomes invalid after a certain period or when the form was filled. The email verification could be accomplished via a simple e-mail containing a verification link which might be mandatory to take click on before filling the answers.
+
+Regarding the subject class it turned out that some subjects chose the wrong category. Therefore, the order of possible answers will be rearranged.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/response-limitation.png}
+    \caption{Response limitation}
+    \label{fig:response-limit}
+\end{figure}
 
 \subsection{Absolute and relative frequencies}
 
