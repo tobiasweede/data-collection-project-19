@@ -17,7 +17,7 @@
 \usepackage{pdfpages}
 \usepackage{hyperref}
 \usepackage{url}
-\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\usepackage{xcolor} %red, green, blue, yellow, cyan, magenta, black, white
 
 %table caption on top
 \usepackage{float}
@@ -26,6 +26,29 @@
 
 %custom command to rotate text
 \newcommand*\rot{\rotatebox{90}}
+
+\lstset{ 
+  language=R,                     % the language of the code
+  basicstyle=\tiny\ttfamily, % the size of the fonts that are used for the code
+  numbers=left,                   % where to put the line-numbers
+  numberstyle=\tiny\color{black},  % the style that is used for the line-numbers
+  stepnumber=1,                   % the step between two line-numbers. If it is 1, each line
+                                  % will be numbered
+  numbersep=5pt,                  % how far the line-numbers are from the code
+  backgroundcolor=\color{white},  % choose the background color. You must add \usepackage{color}
+  showspaces=false,               % show spaces adding particular underscores
+  showstringspaces=false,         % underline spaces within strings
+  showtabs=false,                 % show tabs within strings adding particular underscores
+  frame=single,                   % adds a frame around the code
+  rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+  tabsize=2,                      % sets default tabsize to 2 spaces
+  captionpos=b,                   % sets the caption-position to bottom
+  breaklines=true,                % sets automatic line breaking
+  breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+  keywordstyle=\color{black},      % keyword style
+  commentstyle=\color{black},   % comment style
+  stringstyle=\color{black}      % string literal style
+} 
 
 \begin{document}
 	
@@ -134,7 +157,7 @@ As the survey is not carried out on the full sample size but just on a few show 
 In reality, an implementation of sequential sampling as described by Fan et al. \cite{fan1962development} is suggested directly on the website. If users search persons a binomial approach can be applied. If the user is selected, a overlay with an invitation to the survey can be displayed. Still, it remains questionable if the structure of respondents is representative and delivers an unbiased view as humans tend only to report unwanted results \cite{bergstrand1983bias}. Maybe incentives to answer the questionnaire have to be introduced.
 
 \subsection{Statistical indicators}
-The analysis will heavily relate on cross tables. Besides means and medians, $\chi^2$ coefficients \cite{doi:10.1080/14786440009463897} (as shown in formula \ref{eq:chi-squared}) and contingency coefficients \cite{pearson1930theory} (as shown in formula \ref{eq:contingency-coefficient}) are calculated in order to determine the level of independence among the variables. These measures are important to see whether the questions are answered in a different way among the user groups (pupils, students, researchers, etc). Technically, the calculations will be performed in R using the \verb|assocstats| function from the package \verb|vcd|.
+The analysis will heavily relate on cross tables. Besides means and medians, $\chi^2$ coefficients \cite{doi:10.1080/14786440009463897} (as shown in formula \ref{eq:chi-squared}) and contingency coefficients \cite{pearson1930theory} (as shown in formula \ref{eq:contingency-coefficient}) are calculated in order to determine the level of independence among the variables. These measures are important to see whether the questions are answered in a different way among the user groups (pupils, students, researchers, etc). Technically, the calculations will be performed in R using the \verb|assocstats| function from the package \verb|vcd| \cite{vcd2006}.
 
 \begin{equation}
 \chi^2 = \sum_{r=1}^{k}\sum_{s=1}^{t}\frac{(m_{r,s}-n_{r,s})^2}{m_{r,s}}
@@ -204,8 +227,24 @@ There can be other bases for personal data processing (Contract, Legal Obligatio
 
 In our case, in the survey, on the first question, we need to describe the goals of our research; the data which we are collecting about the individuals; and as for a consent with a check box which states 'Yes, I agree'. Once the research subject agreed, we can follow with the following questions.
 
+\section{Analysis}
+
+\subsection{Pilot}
+Three students were asked to fill out the form in order to check whether the structure and questions are clear and to avoid all different forms of pitfalls. 
+
+We discovered that the e-mail address field is not verified and can contain wrong information. Furthermore, it is not checked if the person already filled a form. This could be solved via a limitation to one response (see figure \ref{fig:response-limit}). The problem is that subjects need a Google account to fill the form if this option is selected. In reality, the suggested pop-up on the website should have a token which becomes invalid after a certain period or when the form was filled once. The email verification could be accomplished via a verification  e-mail containing a link which might be mandatory to open before filling the answers.
+
+Regarding the subject class it turned out that some subjects chose the wrong category. Therefore, the order of possible answers will be rearranged.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/response-limitation.png}
+    \caption{Response limitation}
+    \label{fig:response-limit}
+\end{figure}
+
 \subsection{Analysis plan}
-All questions follow the same scheme. A dummy cross table is represented by table \ref{tab:dummy-crosstable}. All results will be displayed using slightly modified versions of this table. Google forms offers an easy CSV export function. The data is downloaded and subsequently the statistical indicators listed above are calculated.
+All questions follow the same scheme. A dummy cross table for all single questions is represented by table \ref{tab:dummy-crosstable}. All results will be displayed using slightly modified versions of this table. The overall satisfaction is calculated using a similar crosstable (as shown in table \ref{tab:dummy-crosstable-summary}). Google forms offers an easy CSV export function. The data is downloaded and imported into RStudio. Subsequently statistical indicators as listed in the methodology are calculated.
 
 \begin{table}[h!]
 	\centering
@@ -224,27 +263,64 @@ All questions follow the same scheme. A dummy cross table is represented by tabl
   \label{tab:dummy-crosstable}
 \end{table}
 
-\section{Analysis}
 
-\subsection{Pilot}
-Three students were asked to fill out the form in order to check whether the structure and questions are clear and to avoid all different forms of pitfalls. 
+\begin{table}[h!]
+	\centering
+    \begin{tabular}{ | r || c | c | c | c | c || r |}
+      \hline
+        & \rot{I fully agree} & \rot{I agree}  & \rot{I mainly agree}  & \rot{I partly disagree}  & \rot{I disagree} & $\Sigma$ \\ \hline \hline
+      Question 1 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+      \dots & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+      Question 5 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+      $\Sigma$ & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline \hline
+    \end{tabular}
+  \caption{Dummy cross table for overall satisfaction}
+  \label{tab:dummy-crosstable-summary}
+\end{table}
 
-We discovered that the e-mail address field is not verified and can contain wrong information. Furthermore, it is not checked if the person already filled a form. This could be solved via a limitation to one response (see figure \ref{fig:response-limit}). The problem with it is that  subjects need a Google account to fill the form if this option is selected. In reality, the suggested pop-up on the website should have a token which becomes invalid after a certain period or when the form was filled. The email verification could be accomplished via a simple e-mail containing a verification link which might be mandatory to take click on before filling the answers.
+First, the collected data has to be transformed into a numeric form. The code as shown in listing \ref{lst:r-import} shows the fist step.
 
-Regarding the subject class it turned out that some subjects chose the wrong category. Therefore, the order of possible answers will be rearranged.
+\newpage
+\begin{lstlisting}[caption={Data Import into R},label={lst:r-import},language=R]
+#read google file
+dt <- read_csv("Users' satisfaction about Dalarna University's Homepage.csv")
+#convert to data frame
+analysis <- data.frame(q1=1:nrow(dt))
+# scale vector
+scale <- c("I fully agree", "I agree", "I mainly agree", "I partly disagree", "I disagree")
+#converion of question 1
+analysis$q1
+\lstset{ 
+  language=R,                     % the language of the code
+  basicstyle=\tiny\ttfamily, % the size of the fonts that are used for the code
+  numbers=left,                   % where to put the line-numbers
+  numberstyle=\tiny\color{Blue},  % the style that is used for the line-numbers
+  stepnumber=1,                   % the step between two line-numbers. If it is 1, each line
+                                  % will be numbered
+  numbersep=5pt,                  % how far the line-numbers are from the code
+  backgroundcolor=\color{white},  % choose the background color. You must add \usepackage{color}
+  showspaces=false,               % show spaces adding particular underscores
+  showstringspaces=false,         % underline spaces within strings
+  showtabs=false,                 % show tabs within strings adding particular underscores
+  frame=single,                   % adds a frame around the code
+  rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+  tabsize=2,                      % sets default tabsize to 2 spaces
+  captionpos=b,                   % sets the caption-position to bottom
+  breaklines=true,                % sets automatic line breaking
+  breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+  keywordstyle=\color{RoyalBlue},      % keyword style
+  commentstyle=\color{YellowGreen},   % comment style
+  stringstyle=\color{ForestGreen}      % string literal style
+}  <- factor(dt[,5], levels=scale)
+# apply correct scale (-2 -1 0 1 2)
+analysis$q1numeric <- as.numeric(analysis$q1) - 3
+\end{lstlisting}
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.8\textwidth]{figures/response-limitation.png}
-    \caption{Response limitation}
-    \label{fig:response-limit}
-\end{figure}
+Then we are calculating the means and the medians for all questions as well as for every group. This will show the biggest issues for the several user groups.
 
-\subsection{Absolute and relative frequencies}
+We calculate the $\chi^2$ and contingency coefficient for all questions as well as the summarized satisfaction in order to discover the level of independence.
 
-\subsection{Independence}
-
-\subsection{(Co-)variances}
+Next, we calculate the correlations between the different answers for the different questions (e.g. is there a correlation between Loading time and immediate finding of information). Furthermore, correlations are calculated for answers and groups (e.g. pupils might have answered differently than researchers).
 
 \section{Conclusion}
 
@@ -256,15 +332,17 @@ Regarding the subject class it turned out that some subjects chose the wrong cat
 \section*{Appendices}
 
 \subsection*{Survey Guideline}
-\textbf{Information about this questionnaire}
-
-Thank you for cooperating by filling out this questionnaire. Please read carefully this guideline.
-
-The aim of this research is improve the "personal search" sub-section of Dalarna University's internet site (https://www.du.se/). Your answers will be used and analyzed by the researchers of this project.
-
-Your answers will be stored in a database and will be available for the researchers. Your personal details will be stored, however will be saved in a separate database. Only people who are taking part in this project will have access to personal identification which will not be disclosed to anyone else. The rest of the data will be compiled and aggregated, so from the report it will not be possible to recognize individual answers or people. The database will be deleted after 5 years.
-
-Think about about the questions as carefully as possible and look for the anwser which mostly describe your opinion. For every question there is 5 possible answers, 1 to 5. Check the one which matches with your opinion. In the last question you can add any other notes about the "personal search" functionality. Thank you.
+\textbf{Information about this questionnaire}\\
+Thank you for cooperating by filling out this questionnaire. Please read this guideline carefully.
+\\ \\
+The aim of this research is improvement of the "personal search" sub-section of Dalarna University's internet site (https://www.du.se/). Your answers will be used and analyzed by the researchers of this project.
+\\ \\
+Your answers will be stored in a database and will be available for the researchers. Your personal details will be stored, however will be saved in a separate database. Only people who are taking part in this project have access to personal identification which will not be disclosed to anyone else. The rest of the data will be compiled and aggregated, so that it will not be possible to recognize individual answers or people from the report. The database will be deleted after 10 years.
+\\ \\
+\textbf{About the questions}\\
+Think about the questions as carefully as possible and look for the answer which mostly describes your opinion. For every question there are 5 possible answers. They range from full agreement to the statement to full disagreement. Check the one which matches with your opinion. In the last question you can add any other notes about the "personal search" functionality.
+\\ \\
+Thank you.
 
 \subsection*{Survey Questions}
 \begin{enumerate}
@@ -276,7 +354,10 @@ Think about about the questions as carefully as possible and look for the anwser
 	\item Do you have any improvement suggestions?
 \end{enumerate}
 
+\subsection*{Google CSV file}
+The Google CSV file can be as a separate attached document.
+
 \subsection*{DESAP checklist}
-The DESAP checklist can be as a separate document.
+The DESAP checklist can be as a separate attached document.
 
 \end{document}
