@@ -18,6 +18,8 @@
 \usepackage{hyperref}
 \usepackage{url}
 \usepackage{xcolor} %red, green, blue, yellow, cyan, magenta, black, white
+\usepackage{natbib}
+%\usepackage{harvard}
 
 %table caption on top
 \usepackage{float}
@@ -135,7 +137,7 @@ n = Z^2_\alpha \frac{P\dot(1-P)}{(\hat{p}-P)^2} = 1.96^2\frac{0.5\dot{(1-0.5)}}{
 
 \subsection{Quantification and scale}
 
-A qualitative survey \cite{sofaer1999qualitative} with quantified questions is suggested as functionality remains a subjective impression. For quantification a five-point Likert scale \cite{likert1932technique} is used. The scale is not directly visible to the subject as questions can be answered with sentences like "I fully agree", "I agree", etc. It is quantified in a bipolar way as shown in figure \ref{tab:response-scale}.  There is a discussion \cite{cummins2000we} whether five-point Likert scales are a sound method or not. This research sticks to it as more sophisticated methods \cite{chimi2009likert} seem unhandy and are not easily adaptable in the system, which is used for data collection.
+A qualitative survey \citep{sofaer1999qualitative} with quantified questions is suggested as functionality remains a subjective impression. For quantification a five-point Likert scale \citep{likert1932technique} is used. The scale is not directly visible to the subject as questions can be answered with sentences like "I fully agree", "I agree", etc. It is quantified in a bipolar way as shown in figure \ref{tab:response-scale}.  There is a discussion \citep{cummins2000we} whether five-point Likert scales are a sound method or not. This research sticks to it as more sophisticated methods \citep{chimi2009likert} seem unhandy and are not easily adaptable in the system, which is used for data collection.
 
 \begin{table}[h!]
 \begin{tabular}{|c|| c|c|c|c|c|}
@@ -149,15 +151,15 @@ A qualitative survey \cite{sofaer1999qualitative} with quantified questions is s
 
 
 \subsection{Survey tool}
-A Google docs online form is chosen to conduct the research. It seems to be used in other educational context \cite{gehringer2010daily} but is not suggested in research beyond a Master thesis level. Still, the use of Google forms remains questionable. There are many arguments pro and contra using it. On one hand using Google forms is cheap, easy and fast. The data might even be more secure as on local servers as Google probably has good security and backup strategies. On the other hand one gives the data away to Google and can not be fully aware anymore what happens to it. Dalarna University also offers a survey tool which should be used instead in a real context.
+A Google docs online form is chosen to conduct the research. It seems to be used in other educational context \citep{gehringer2010daily} but is not suggested in research beyond a Master thesis level. Still, the use of Google forms remains questionable. There are many arguments pro and contra using it. On one hand using Google forms is cheap, easy and fast. The data might even be more secure as on local servers as Google probably has good security and backup strategies. On the other hand one gives the data away to Google and can not be fully aware anymore what happens to it. Dalarna University also offers a survey tool which should be used instead in a real context.
 
 \subsection{Data collection plan}
 As the survey is not carried out on the full sample size but just on a few show cases, we send an E-Mail or WhatsApp message with link to the Google forms document and explanation to some of our classmates.
 \\ \\
-In reality, an implementation of sequential sampling as described by Fan et al. \cite{fan1962development} is suggested directly on the website. If users search persons a binomial approach can be applied. If the user is selected, a overlay with an invitation to the survey can be displayed. Still, it remains questionable if the structure of respondents is representative and delivers an unbiased view as humans tend only to report unwanted results \cite{bergstrand1983bias}. Maybe incentives to answer the questionnaire have to be introduced.
+In reality, an implementation of sequential sampling as described by Fan et al. \citep{fan1962development} is suggested directly on the website. If users search persons a binomial approach can be applied. If the user is selected, a overlay with an invitation to the survey can be displayed. Still, it remains questionable if the structure of respondents is representative and delivers an unbiased view as humans tend only to report unwanted results \citep{bergstrand1983bias}. Maybe incentives to answer the questionnaire have to be introduced.
 
 \subsection{Statistical indicators}
-The analysis will heavily relate on cross tables. Besides means and medians, $\chi^2$ coefficients \cite{doi:10.1080/14786440009463897} (as shown in formula \ref{eq:chi-squared}) and contingency coefficients \cite{pearson1930theory} (as shown in formula \ref{eq:contingency-coefficient}) are calculated in order to determine the level of independence among the variables. These measures are important to see whether the questions are answered in a different way among the user groups (pupils, students, researchers, etc). Technically, the calculations will be performed in R using the \verb|assocstats| function from the package \verb|vcd| \cite{vcd2006}.
+The analysis will heavily relate on cross tables. Besides means and medians, $\chi^2$ coefficients \citep{doi:10.1080/14786440009463897} (as shown in formula \ref{eq:chi-squared}) and contingency coefficients \citep{pearson1930theory} (as shown in formula \ref{eq:contingency-coefficient}) are calculated in order to determine the level of independence among the variables. These measures are important to see whether the questions are answered in a different way among the user groups (pupils, students, researchers, etc). Technically, the calculations will be performed in R using the \verb|assocstats| function from the package \verb|vcd| \citep{vcd2006}.
 
 \begin{equation}
 \chi^2 = \sum_{r=1}^{k}\sum_{s=1}^{t}\frac{(m_{r,s}-n_{r,s})^2}{m_{r,s}}
@@ -173,7 +175,7 @@ K = \sqrt{\frac{\chi^2}{n+\chi^2}}
 }
 
 
-A pairwise correlation coefficient \cite{lee1988thirteen} (as shown in equation \ref{eq:correlation}) is computed to show if some of the questions can be abandoned in the future.
+A pairwise correlation coefficient \citep{lee1988thirteen} (as shown in equation \ref{eq:correlation}) is computed to show if some of the questions can be abandoned in the future.
 
 \begin{equation}
 r_{x,y} = \frac{s_{x,y}}{\sqrt{s_{x^2} \cdot s_{y^2}}}
@@ -181,14 +183,14 @@ r_{x,y} = \frac{s_{x,y}}{\sqrt{s_{x^2} \cdot s_{y^2}}}
 \end{equation}
 
 \subsection{Data quality assurance}
-The DESAP checklist is used to keep track of the Project's data quality. "DESAP  is  the  generic  checklist  for  a  systematic  quality  assessment  of  surveys  in  the  European Statistical  System  (ESS).  It  has  been  designed  as  a  tool  for  survey  managers  and  should  support them  in  assessing  the  quality  of  their  statistics  and  considering  improvement  measures.  During  its development, the checklist has been tested in a pilot study covering a large variety of survey areas. It is fully compliant with the ESS quality criteria and comprises the main aspects relevant to the quality of  statistical  data \cite{desap2019}".
+The DESAP checklist is used to keep track of the Project's data quality. "DESAP  is  the  generic  checklist  for  a  systematic  quality  assessment  of  surveys  in  the  European Statistical  System  (ESS).  It  has  been  designed  as  a  tool  for  survey  managers  and  should  support them  in  assessing  the  quality  of  their  statistics  and  considering  improvement  measures.  During  its development, the checklist has been tested in a pilot study covering a large variety of survey areas. It is fully compliant with the ESS quality criteria and comprises the main aspects relevant to the quality of  statistical  data \citep{desap2019}".
 
 \subsection{Ethical considerations} 
 While the main goal of a research is to answer questions and provide meaningful results, it is also crucial that we conduct the research in an ethical manner. 
 
-As American Statistical Association’s Ethical Guidelines (\cite{asa}) states, an ethical research should be transparent, reproducible and valid. The researchers should also think ethically about every stakeholder of the given project, so avoid or minimize harm; and not to pursuit unethical ends. 
+As American Statistical Association’s Ethical Guidelines (\citep{asa}) states, an ethical research should be transparent, reproducible and valid. The researchers should also think ethically about every stakeholder of the given project, so avoid or minimize harm; and not to pursuit unethical ends. 
 
-The Guidelines of the American Statistical Association are mostly similar to the guidelines of the RESPECT code (\cite{respect}); the main ideas are the following:
+The Guidelines of the American Statistical Association are mostly similar to the guidelines of the RESPECT code (\citep{respect}); the main ideas are the following:
 
 \begin{itemize}
 	\item \textbf{Consideration about the data}. The data should be objective and valid. The researcher should know the implicit biases and limitations of the data.
@@ -210,7 +212,7 @@ In terms of our project, the we should consider the following:
 
 \subsection{Legal considerations}
 
-As we research European Union subjects, and we store their personal data, we need to act accordingly to the The EU General Data Protection Regulation (GDPR) \cite{voigt2017eu}. The researchers in this case are the Data Processors; because they are handling and storing the subjects's personal data, which is in this case is 1, Name 2, Email 3, IP address. This is, according to the law, personal data, because the subjects can be directly or indirectly identified using these data points. It is important to understand that pseudonymised can also count as personal data; and the process itself of data-transformation is a personal data handling act.
+As we research European Union subjects, and we store their personal data, we need to act accordingly to the The EU General Data Protection Regulation (GDPR) \citep{voigt2017eu}. The researchers in this case are the Data Processors; because they are handling and storing the subjects's personal data, which is in this case is 1, Name 2, Email 3, IP address. This is, according to the law, personal data, because the subjects can be directly or indirectly identified using these data points. It is important to understand that pseudonymised can also count as personal data; and the process itself of data-transformation is a personal data handling act.
 
 The GDPR demands from the researchers that the handle of personal data should be lawful, fair and transparent. These guidelines can be found at universities and at other research groups.
 
@@ -278,9 +280,59 @@ All questions follow the same scheme. A dummy cross table for all single questio
   \label{tab:dummy-crosstable-summary}
 \end{table}
 
-First, the collected data has to be transformed into a numeric form. The code as shown in listing \ref{lst:r-import} shows the fist step.
+First, the collected data has to be transformed into a numeric form. The code as shown in listing \ref{lst:r-import} (see appendix) shows the fist step.
 
-\newpage
+Then we are calculating the means and the medians for all questions as well as for every group. This will show the biggest issues for the several user groups.
+
+We calculate the $\chi^2$ and contingency coefficient for all questions as well as the summarized satisfaction in order to discover the level of independence.
+
+Next, we calculate the correlations between the different answers for the different questions (e.g. is there a correlation between Loading time and immediate finding of information). Furthermore, correlations are calculated for answers and groups (e.g. pupils might have answered differently than researchers).
+
+\section{Conclusion}
+
+After Dalarna University's website changed, our research tried to generate meaningful information about user satisfaction of the "search personal" function. We focused on  three aspects: \textit{user friendliness}, \textit{efficiency} and the \textit{filtering facilities}. The final aim of the research is to provide the website administrators and developers feedback, which show the critical points, as well as the strengths of the system.
+
+The data collection and the research methodology use proved and scientific procedures, so the test about user satisfaction can be repeated. This can be needed, if some changes would been made in the system. By repeating the research using the same methodology, the effectiveness of the changes could also be measured.
+
+We created conclusions from 2 perspectives:
+\begin{itemize}
+	\item \textbf{User groups:} Different type of users have different needs, and they behave differently. Our research shows, which functionalities are the most important / satisfactory for different site visitors.
+	\item \textbf{Site functionalities:} We also tested the different functionalities (described in the questions) independently; so we see their overall correctness. Also, we examined how these functions work together from the user satisfaction perspective.	
+\end{itemize}
+
+Finally, we suggested to run standard statistical measurements on the data, in order to know, how representative it is for the whole visitor population. As a future question to investigate, using these results as well as the included R code, a research could be made about creating more robust and reliable tests about internet site user satisfaction.
+
+\section*{References}
+\bibliographystyle{dinat}
+\renewcommand\refname{\vskip -1cm}
+\bibliography{ST3012_project_report_v19pette_v18tobwe}
+
+\section{Appendices}
+
+\subsection{Survey Guideline}
+\textbf{Information about this questionnaire}\\
+Thank you for cooperating by filling out this questionnaire. Please read this guideline carefully.
+\\ \\
+The aim of this research is improvement of the "personal search" sub-section of Dalarna University's internet site (https://www.du.se/). Your answers will be used and analyzed by the researchers of this project.
+\\ \\
+Your answers will be stored in a database and will be available for the researchers. Your personal details will be stored, however will be saved in a separate database. Only people who are taking part in this project have access to personal identification which will not be disclosed to anyone else. The rest of the data will be compiled and aggregated, so that it will not be possible to recognize individual answers or people from the report. The database will be deleted after 10 years.
+\\ \\
+\textbf{About the questions}\\
+Think about the questions as carefully as possible and look for the answer which mostly describes your opinion. For every question there are 5 possible answers. They range from full agreement to the statement to full disagreement. Check the one which matches with your opinion. In the last question you can add any other notes about the "personal search" functionality.
+\\ \\
+Thank you.
+
+\subsection{Survey Questions}
+\begin{enumerate}
+	\item Navigation to the "personal search" page is intuitive and fast?
+	\item Loading time after entering the search term is quick? 
+	\item Information you are looking was found immediately?
+	\item It is intuitive to add/remove filters?
+	\item If more than one filter is needed, is it clear what is the relation between two filters?
+	\item Do you have any improvement suggestions?
+\end{enumerate}
+
+\subsection{Data Import into R}
 \begin{lstlisting}[caption={Data Import into R},label={lst:r-import},language=R]
 #read google file
 dt <- read_csv("Users' satisfaction about Dalarna University's Homepage.csv")
@@ -316,63 +368,10 @@ analysis$q1
 analysis$q1numeric <- as.numeric(analysis$q1) - 3
 \end{lstlisting}
 
-Then we are calculating the means and the medians for all questions as well as for every group. This will show the biggest issues for the several user groups.
-
-We calculate the $\chi^2$ and contingency coefficient for all questions as well as the summarized satisfaction in order to discover the level of independence.
-
-Next, we calculate the correlations between the different answers for the different questions (e.g. is there a correlation between Loading time and immediate finding of information). Furthermore, correlations are calculated for answers and groups (e.g. pupils might have answered differently than researchers).
-
-\section{Conclusion}
-
-After Dalarna University's website changed, our research tried to generate meaningful information about user satisfaction of the "search personal" function. We focused on  three topics: \textit{user friendliness}, \textit{efficiency} and the \textit{filtering facilities}. As the final aim of the research is to provide the website administrators and developers feedback, which show the critical points, as well as the strengths of the system.
-
-The data collection and the research methodology tried to use a proved, scientific methodology, so the test about user satisfaction can be  repeated. This can be needed, if some changes would been made in the system. By repeating the research using the same methodology, the effectiveness of the changes could be also measured.
-
-We created conclusions from 2 perspectives:
-\begin{itemize}
-	\item \textbf{User groups.} Different type of users have different needs, and they behave differently. Our research shows, which functionalities are the most important / satisfactory for different site visitors.
-	\item \textbf{Site functionalities.} We also tested the different functionalities (described in the questions) independently; so we see their overall correctness. Also, we examined how these functions work together from the user satisfaction perspective.	
-\end{itemize}
-
-Finally, we also ran standard statistical measurements on our data, in order to know, how much they representative for the whole visitor population. As a future question to investigate, using these results as well as the included R code, a research could be made about creating more robust and reliable tests about internet site user satisfaction.
-
-
-
-
-\section*{References}
-\bibliographystyle{ieeetr}
-\renewcommand\refname{\vskip -1cm}
-\bibliography{ST3012_project_report_v19pette_v18tobwe}
-
-\section*{Appendices}
-
-\subsection*{Survey Guideline}
-\textbf{Information about this questionnaire}\\
-Thank you for cooperating by filling out this questionnaire. Please read this guideline carefully.
-\\ \\
-The aim of this research is improvement of the "personal search" sub-section of Dalarna University's internet site (https://www.du.se/). Your answers will be used and analyzed by the researchers of this project.
-\\ \\
-Your answers will be stored in a database and will be available for the researchers. Your personal details will be stored, however will be saved in a separate database. Only people who are taking part in this project have access to personal identification which will not be disclosed to anyone else. The rest of the data will be compiled and aggregated, so that it will not be possible to recognize individual answers or people from the report. The database will be deleted after 10 years.
-\\ \\
-\textbf{About the questions}\\
-Think about the questions as carefully as possible and look for the answer which mostly describes your opinion. For every question there are 5 possible answers. They range from full agreement to the statement to full disagreement. Check the one which matches with your opinion. In the last question you can add any other notes about the "personal search" functionality.
-\\ \\
-Thank you.
-
-\subsection*{Survey Questions}
-\begin{enumerate}
-	\item Navigation to the "personal search" page is intuitive and fast?
-	\item Loading time after entering the search term is quick? 
-	\item Information you are looking was found immediately?
-	\item It is intuitive to add/remove filters?
-	\item If more than one filter is needed, is it clear what is the relation between two filters?
-	\item Do you have any improvement suggestions?
-\end{enumerate}
-
-\subsection*{Google CSV file}
+\subsection{Google CSV file}
 The Google CSV file can be as a separate attached document.
 
-\subsection*{DESAP checklist}
+\subsection{DESAP checklist}
 The DESAP checklist can be as a separate attached document.
 
 \end{document}
