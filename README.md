@@ -9,8 +9,8 @@ Users' satisfaction about Dalarna University's Homepage
 ## Timeline
 * ~~ 06.5. 15:00 - 15:30 first supervisor meeting (room?) ~~
 * ~~ 13.5. or 15.5. 10:00-11:00 second supervisor meeting ~~
-* 21.5. group peer review
-* 25.5. send final draft to supervisor
+* ~~ 21.5. group peer review ~~
+* ~~ 25.5. send final draft to supervisor ~~
 * 30.5. hand in deadline
 * 03.6. afternoon presentation (mail to Moudoud!)
 
