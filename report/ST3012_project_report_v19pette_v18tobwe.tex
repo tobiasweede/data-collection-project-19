@@ -73,12 +73,12 @@
 The website of an organization is its figurehead. Not long time ago, Dalarna University decided to update the website layout to cutting-edge web technologies. To set up a website is easy but who guarantees that the users are satisfied with it?
 
 \subsection{Research questions}
-Users' satisfaction is a very broad topic and the scope has to be narrowed down carefully. A survey about general satisfaction would be doomed to fail. It either would be too big and comprehensive or too general and vague. Both would lead to missing and/or imprecise information. Therefore, this project focuses on aspects of the "search personal" page. In oder to answer these questions a survey among the website users is conducted. Following main questions are raised:
+Users' satisfaction is a very broad topic and the scope has to be narrowed down carefully. A survey about general satisfaction would be doomed to fail. It either would be too big and comprehensive or too general and vague. Both would lead to missing values and imprecise information. Therefore, this project focuses on aspects of the "search personal" page. In oder to answer these questions a survey among the website users is conducted. Following main questions are raised:
 
 \begin{enumerate}
 	\item \textbf{User friendliness:} When "find personal" is accessed, the navigation path is intuitive, quick and the front-end appears up-to-date?
 	\item \textbf{Efficiency:} If "find personal" page is visited, then the required data is found quickly?
-	\item \textbf{Filtering facility:} If a filter is used (added or deleted), the process intuitive and is it clear which relation/hierarchy between filters prevails?
+	\item \textbf{Filtering facility:} If a filter is used (added or deleted), is it clear which relation/hierarchy between filters prevails?
 \end{enumerate}
 
 \subsection{Goals}
@@ -92,7 +92,7 @@ In order to get deeper knowledge of the user needs a series of steps have to be 
 \end{itemize}
 
 \subsection{Final aim}
-With this project we help to increase the understanding how well user needs are suited by the current "find personal" system. The project shows where the weaknesses and strengths are. It can be used to determine if changes are necessary or not.
+With this project we help to understand how well user needs are suited by the current "find personal" system. The project shows where the weaknesses and strengths are. It can be used to determine if changes are necessary or not.
 
 \section{Methodology}
 
@@ -104,16 +104,11 @@ In order to have a correct, measurable outcome, the environment of the experimen
 \item \textbf{Controllable} A designed experiment makes sure that the effect are caused by factors, which are known by the researchers.
 \end{enumerate}
 
-We are testing one environment, but we have more than one sub-sections in our population group. We can argue that we have \textit{at least} one dimension of sub-group in this population (status: student, teacher, researcher...); and it is also easy to see, why we could create more than one dimensions of the sub-populations (age, sex, etc..)
+We are testing one environment, but we have more than one sub-sections in our population group. We can argue that we have \textit{at least} one dimension of sub-group in this population (status: student, teacher, researcher...); and it is also easy to see, why we could create more than one dimensions of the sub-populations (age, sex, etc.).
 
-The other dimension is the behavior which the site visitors conduct on the site -- not every visitor behaves the same way, thus some visitors experience aspect of the site, which others might not. The list of possible behaviors is probably endless, so we need to focus on very broad, but still distinctive usage patterns, such as:
-\begin{itemize}
-	\item Simple person search, user found
-	\item Simple person search, filter used
-	\item Simple person search, combination of filters used
-\end{itemize}
+The other dimension is the behavior which site visitors conduct on the site. Not every visitor behaves the same way, thus some visitors experience aspect of the site, which others might not. The list of possible behaviors is probably endless, so we need to focus on very broad, but still distinctive usage patterns, such as "Simple person search, user found", "Simple person search, filter used" and "Simple person search, combination of filters used".
 
-So we can see that we have \textit{at least }2 sources of variability : user group and user behavior. It is impossible to test every combination of these blocks, but if we still want to know, which block is responsible for some effect in the final outcome. For our case, if we stick with the 2-dimensional population model, the Latin Square Design is a good candidate.
+We can see that we have \textit{at least }2 sources of variability : user group and user behavior. It is impossible to test every combination of these blocks, but if we still want to know, which block is responsible for some effect in the final outcome. For our case, if we stick with the 2-dimensional population model, the Latin Square Design is a good candidate.
 
 The LSD design (see formula \ref{eq:LSD-design}) orders outcome data into tables, and from these matrices builds a model, which is used for a linear regression:
 
@@ -137,7 +132,7 @@ n = Z^2_\alpha \frac{P\dot(1-P)}{(\hat{p}-P)^2} = 1.96^2\frac{0.5\dot{(1-0.5)}}{
 
 \subsection{Quantification and scale}
 
-A qualitative survey \citep{sofaer1999qualitative} with quantified questions is suggested as functionality remains a subjective impression. For quantification a five-point Likert scale \citep{likert1932technique} is used. The scale is not directly visible to the subject as questions can be answered with sentences like "I fully agree", "I agree", etc. It is quantified in a bipolar way as shown in figure \ref{tab:response-scale}.  There is a discussion \citep{cummins2000we} whether five-point Likert scales are a sound method or not. This research sticks to it as more sophisticated methods \citep{chimi2009likert} seem unhandy and are not easily adaptable in the system, which is used for data collection.
+A qualitative survey \citep{sofaer1999qualitative} with quantified questions is suggested as functionality remains a subjective impression. For quantification a five-point Likert scale \citep{likert1932technique} is used. The scale is not directly visible to the subject as questions can be answered with sentences like "I fully agree", "I agree", etc. It is quantified in a bipolar way as shown in figure \ref{tab:response-scale}.  There is a discussion \citep{cummins2000we} whether five-point Likert scales are a sound method or not. This research sticks to it as an seven-point Likert scale \citep{chimi2009likert} or even a tailor-made scale seem unhandy and not easily adaptable in the system, which is used for data collection.
 
 \begin{table}[h!]
 \begin{tabular}{|c|| c|c|c|c|c|}
@@ -155,8 +150,8 @@ A Google docs online form is chosen to conduct the research. It seems to be used
 
 \subsection{Data collection plan}
 As the survey is not carried out on the full sample size but just on a few show cases, we send an E-Mail or WhatsApp message with link to the Google forms document and explanation to some of our classmates.
-\\ \\
-In reality, an implementation of sequential sampling as described by Fan et al. \citep{fan1962development} is suggested directly on the website. If users search persons a binomial approach can be applied. If the user is selected, a overlay with an invitation to the survey can be displayed. Still, it remains questionable if the structure of respondents is representative and delivers an unbiased view as humans tend only to report unwanted results \citep{bergstrand1983bias}. Maybe incentives to answer the questionnaire have to be introduced.
+
+In reality, an implementation of sequential sampling as described by Fan et al. \citep{fan1962development} is suggested directly on the website. If users search persons, a binomial approach can be applied. If the user is selected, an overlay with an invitation to the survey can be displayed. Still, it remains questionable if the structure of respondents is representative and delivers an unbiased view as humans tend only to report unwanted results \citep{bergstrand1983bias}. Maybe incentives to answer the questionnaire have to be introduced.
 
 \subsection{Statistical indicators}
 The analysis will heavily relate on cross tables. Besides means and medians, $\chi^2$ coefficients \citep{doi:10.1080/14786440009463897} (as shown in formula \ref{eq:chi-squared}) and contingency coefficients \citep{pearson1930theory} (as shown in formula \ref{eq:contingency-coefficient}) are calculated in order to determine the level of independence among the variables. These measures are important to see whether the questions are answered in a different way among the user groups (pupils, students, researchers, etc). Technically, the calculations will be performed in R using the \verb|assocstats| function from the package \verb|vcd| \citep{vcd2006}.
@@ -188,7 +183,7 @@ The DESAP checklist is used to keep track of the Project's data quality. "DESAP 
 \subsection{Ethical considerations} 
 While the main goal of a research is to answer questions and provide meaningful results, it is also crucial that we conduct the research in an ethical manner. 
 
-As American Statistical Association’s Ethical Guidelines (\citep{asa}) states, an ethical research should be transparent, reproducible and valid. The researchers should also think ethically about every stakeholder of the given project, so avoid or minimize harm; and not to pursuit unethical ends. 
+As American Statistical Association’s Ethical Guidelines (\citep{asa}) states, an ethical research should be transparent, reproducible and valid. The researchers should also think ethically about every stakeholder of the given project in order to avoid or minimize harm; and not to pursuit unethical ends. 
 
 The Guidelines of the American Statistical Association are mostly similar to the guidelines of the RESPECT code (\citep{respect}); the main ideas are the following:
 
@@ -197,7 +192,7 @@ The Guidelines of the American Statistical Association are mostly similar to the
 	\item \textbf{The research subject}. The researcher should consider the rights and the interests of the involved research subjects.
 	\item \textbf{The team colleagues}. The research is a team-work, so the researcher should consider the rights and interests of the team members.
 	\item \textbf{Other statisticians}. A researcher should share data and methods if possible; should consider the interest of the scientific community.
-	\item \textbf{Employers, customers or other commercial stakeholders.} The researcher should work in a moral way also in a commercial environment; should try to work an ethical work environment; and should strive to professionalism.
+	\item \textbf{Employers, customers or other commercial stakeholders.} The researcher should work in a moral way, also in a commercial environment, and should strive to professionalism.
 \end{itemize}
 
 In terms of our project, the we should consider the following:
@@ -212,7 +207,7 @@ In terms of our project, the we should consider the following:
 
 \subsection{Legal considerations}
 
-As we research European Union subjects, and we store their personal data, we need to act accordingly to the The EU General Data Protection Regulation (GDPR) \citep{voigt2017eu}. The researchers in this case are the Data Processors; because they are handling and storing the subjects's personal data, which is in this case is 1, Name 2, Email 3, IP address. This is, according to the law, personal data, because the subjects can be directly or indirectly identified using these data points. It is important to understand that pseudonymised can also count as personal data; and the process itself of data-transformation is a personal data handling act.
+As we research European Union subjects, and we store their personal data, we need to act accordingly to the The EU General Data Protection Regulation (GDPR) \citep{voigt2017eu}. The researchers in this case are the Data Processors; because they are handling and storing the subjects's personal data, which is in this case is 1, Name 2, Email 3, IP address. According to the law this is personal data, because the subjects can be directly or indirectly identified using these data points. It is important to understand that pseudonymised can also count as personal data; and the process itself of data-transformation is a personal data handling act.
 
 The GDPR demands from the researchers that the handle of personal data should be lawful, fair and transparent. These guidelines can be found at universities and at other research groups.
 
@@ -220,7 +215,7 @@ In order to deal with the personal data, first of all, the subject should give a
 \begin{itemize}
 	\item Freely given
 	\item Specific
-	\item Informent
+	\item Informative
 	\item Unambigous
 	\item An affirmative action	
 \end{itemize}
@@ -300,7 +295,10 @@ We created conclusions from 2 perspectives:
 	\item \textbf{Site functionalities:} We also tested the different functionalities (described in the questions) independently; so we see their overall correctness. Also, we examined how these functions work together from the user satisfaction perspective.	
 \end{itemize}
 
-Finally, we suggested to run standard statistical measurements on the data, in order to know, how representative it is for the whole visitor population. As a future question to investigate, using these results as well as the included R code, a research could be made about creating more robust and reliable tests about internet site user satisfaction.
+We suggested to run standard statistical measurements on the data, in order to know, how representative it is for the whole visitor population. As a future question to investigate, using these results as well as the included R code (see listing \ref{lst:r-import}), a research could be made about creating more robust and reliable tests about internet site user satisfaction.
+
+Ultimately, this document can not give profound advice with respect to the defined research questions, as only the pilot was carried out. Only general consultation can be given. In a first step, for each question as well as the the overall aggregation, a negative metric might be considered as a warning signal (the more negative the worse). A next step would be the investigation of variance. Third, a homogeneous negative response could point to a general issue while a group dependent negative rating might relate to possible intra-group improvements.
+
 
 \section*{References}
 \bibliographystyle{dinat}
@@ -333,7 +331,7 @@ Thank you.
 \end{enumerate}
 
 \subsection{Data Import into R}
-\begin{lstlisting}[caption={Data Import into R},label={lst:r-import},language=R]
+\begin{lstlisting}[caption={Data Import into R and first analysis steps},label={lst:r-import},language=R]
 #read google file
 dt <- read_csv("Users' satisfaction about Dalarna University's Homepage.csv")
 #convert to data frame
