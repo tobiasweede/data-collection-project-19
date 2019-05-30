@@ -1,77 +1,128 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{15}
+% this bibliography was produced with the style dinat.bst v2.5
+\makeatletter
+\newcommand{\dinatlabel}[1]%
+{\ifNAT@numbers\else\NAT@biblabelnum{#1}\hspace{2\labelsep}\fi}
+\makeatother
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax\def\url#1{\texttt{#1}}\fi
 
-\bibitem{sofaer1999qualitative}
-S.~Sofaer, ``Qualitative methods: what are they and why use them?,'' {\em
-  Health services research}, vol.~34, no.~5 Pt 2, p.~1101, 1999.
+\bibitem[Association(2019)]{asa}
+\dinatlabel{Association 2019} \textsc{Association}, American~S.:
+\newblock \emph{American Statistical Association Ethical guiedelines}.
+\newblock
+  \url{https://www.amstat.org/ASA/Your-Career/Ethical-Guidelines-for-Statistical-Practice.aspx}.
+\newblock 2019. --
+\newblock [Online; accessed 14-May-2019]
 
-\bibitem{likert1932technique}
-R.~Likert, ``A technique for the measurement of attitudes.,'' {\em Archives of
-  psychology}, 1932.
+\bibitem[Bergstrand u.\,a.(1983)Bergstrand, Vedin, Wilhelmsson und
+  Wilhelmsen]{bergstrand1983bias}
+\dinatlabel{Bergstrand u.\,a. 1983} \textsc{Bergstrand}, Robert~;
+  \textsc{Vedin}, Anders~; \textsc{Wilhelmsson}, Claes~; \textsc{Wilhelmsen},
+  Lars:
+\newblock Bias due to non-participation and heterogenous sub-groups in
+  population surveys.
+\newblock In: \emph{Journal of chronic diseases}
+\newblock 36 (1983), Nr.~10, S.~725--728
 
-\bibitem{cummins2000we}
-R.~A. Cummins and E.~Gullone, ``Why we should not use 5-point likert scales:
-  The case for subjective quality of life measurement,'' in {\em Proceedings,
-  second international conference on quality of life in cities}, vol.~74,
-  p.~93, 2000.
+\bibitem[Chimi und Russell(2009)]{chimi2009likert}
+\dinatlabel{Chimi und Russell 2009} \textsc{Chimi}, Carl~J.~; \textsc{Russell},
+  David~L.:
+\newblock The Likert scale: A proposal for improvement using quasi-continuous
+  variables.
+\newblock In: \emph{Information Systems Education Conference, Washington, DC},
+  2009, S.~1--10
 
-\bibitem{chimi2009likert}
-C.~J. Chimi and D.~L. Russell, ``The likert scale: A proposal for improvement
-  using quasi-continuous variables,'' in {\em Information Systems Education
-  Conference, Washington, DC}, pp.~1--10, 2009.
+\bibitem[Code(2019)]{respect}
+\dinatlabel{Code 2019} \textsc{Code}, RESPECT:
+\newblock \emph{The RESPECT Code of Practice}.
+\newblock \url{http://www.respectproject.org/code/index.php}.
+\newblock 2019. --
+\newblock [Online; accessed 14-May-2019]
 
-\bibitem{gehringer2010daily}
-E.~F. Gehringer, ``Daily course evaluation with google forms,'' in {\em ASEE,
-  American Society for Engineering Education Annual Conference \& Exposition},
-  vol.~27, 2010.
+\bibitem[Cummins und Gullone(2000)]{cummins2000we}
+\dinatlabel{Cummins und Gullone 2000} \textsc{Cummins}, Robert~A.~;
+  \textsc{Gullone}, Eleonora:
+\newblock Why we should not use 5-point Likert scales: The case for subjective
+  quality of life measurement.
+\newblock In: \emph{Proceedings, second international conference on quality of
+  life in cities} Bd.~74, 2000, S.~93
 
-\bibitem{fan1962development}
-C.~Fan, M.~E. Muller, and I.~Rezucha, ``Development of sampling plans by using
-  sequential (item by item) selection techniques and digital computers,'' {\em
-  Journal of the American Statistical Association}, vol.~57, no.~298,
-  pp.~387--402, 1962.
+\bibitem[Eurostat(2008)]{desap2019}
+\dinatlabel{Eurostat 2008} \textsc{Eurostat}:
+\newblock \emph{The EuropeanSelf Assessment Checklistfor Survey Managers}.
+\newblock
+  \url{https://ec.europa.eu/eurostat/documents/64157/4373903/07-Checklist-for-Survey-Managers_DESAP-EN.pdf}.
+\newblock 2008. --
+\newblock [Online; accessed 14-May-2019]
 
-\bibitem{bergstrand1983bias}
-R.~Bergstrand, A.~Vedin, C.~Wilhelmsson, and L.~Wilhelmsen, ``Bias due to
-  non-participation and heterogenous sub-groups in population surveys,'' {\em
-  Journal of chronic diseases}, vol.~36, no.~10, pp.~725--728, 1983.
+\bibitem[Fan u.\,a.(1962)Fan, Muller und Rezucha]{fan1962development}
+\dinatlabel{Fan u.\,a. 1962} \textsc{Fan}, CT~; \textsc{Muller}, Mervin~E.~;
+  \textsc{Rezucha}, Ivan:
+\newblock Development of sampling plans by using sequential (item by item)
+  selection techniques and digital computers.
+\newblock In: \emph{Journal of the American Statistical Association}
+\newblock 57 (1962), Nr.~298, S.~387--402
 
-\bibitem{doi:10.1080/14786440009463897}
-K.~P. F.R.S., ``X. on the criterion that a given system of deviations from the
+\bibitem[F.R.S.(1900)]{doi:10.1080/14786440009463897}
+\dinatlabel{F.R.S. 1900} \textsc{F.R.S.}, Karl~P.:
+\newblock X. On the criterion that a given system of deviations from the
   probable in the case of a correlated system of variables is such that it can
-  be reasonably supposed to have arisen from random sampling,'' {\em The
-  London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science},
-  vol.~50, no.~302, pp.~157--175, 1900.
+  be reasonably supposed to have arisen from random sampling.
+\newblock In: \emph{The London, Edinburgh, and Dublin Philosophical Magazine
+  and Journal of Science}
+\newblock 50 (1900), Nr.~302, S.~157--175. --
+\newblock URL \url{https://doi.org/10.1080/14786440009463897}
 
-\bibitem{pearson1930theory}
-K.~Pearson, J.~A. Harris, A.~E. Treloar, M.~Wilder, and K.~Pearson, ``On the
-  theory of contingency,'' {\em Journal of the American Statistical
-  Association}, vol.~25, no.~171, pp.~320--327, 1930.
+\bibitem[Gehringer(2010)]{gehringer2010daily}
+\dinatlabel{Gehringer 2010} \textsc{Gehringer}, Edward~F.:
+\newblock Daily course evaluation with Google forms.
+\newblock In: \emph{ASEE, American Society for Engineering Education Annual
+  Conference \& Exposition} Bd.~27, 2010
 
-\bibitem{lee1988thirteen}
-J.~Lee~Rodgers and W.~A. Nicewander, ``Thirteen ways to look at the correlation
-  coefficient,'' {\em The American Statistician}, vol.~42, no.~1, pp.~59--66,
-  1988.
+\bibitem[Lee~Rodgers und Nicewander(1988)]{lee1988thirteen}
+\dinatlabel{Lee~Rodgers und Nicewander 1988} \textsc{Lee~Rodgers}, Joseph~;
+  \textsc{Nicewander}, W~A.:
+\newblock Thirteen ways to look at the correlation coefficient.
+\newblock In: \emph{The American Statistician}
+\newblock 42 (1988), Nr.~1, S.~59--66
 
-\bibitem{desap2019}
-Eurostat, ``The europeanself assessment checklistfor survey managers.''
-  \url{https://ec.europa.eu/eurostat/documents/64157/4373903/07-Checklist-for-Survey-Managers_DESAP-EN.pdf},
-  2008.
-\newblock [Online; accessed 14-May-2019].
+\bibitem[Likert(1932)]{likert1932technique}
+\dinatlabel{Likert 1932} \textsc{Likert}, Rensis:
+\newblock A technique for the measurement of attitudes.
+\newblock In: \emph{Archives of psychology}
+\newblock (1932)
 
-\bibitem{asa}
-A.~S. Association, ``American statistical association ethical guiedelines.''
-  \url{https://www.amstat.org/ASA/Your-Career/Ethical-Guidelines-for-Statistical-Practice.aspx},
-  2019.
-\newblock [Online; accessed 14-May-2019].
+\bibitem[Meyer u.\,a.(2006)Meyer, Zeileis und Hornik]{vcd2006}
+\dinatlabel{Meyer u.\,a. 2006} \textsc{Meyer}, David~; \textsc{Zeileis},
+  Achim~; \textsc{Hornik}, Kurt:
+\newblock The Strucplot Framework: Visualizing Multi-Way Contingency Tables
+  with vcd.
+\newblock In: \emph{Journal of Statistical Software}
+\newblock 17 (2006), Nr.~3, S.~1--48. --
+\newblock URL \url{http://www.jstatsoft.org/v17/i03/}
 
-\bibitem{respect}
-R.~Code, ``The respect code of practice.''
-  \url{http://www.respectproject.org/code/index.php}, 2019.
-\newblock [Online; accessed 14-May-2019].
+\bibitem[Pearson u.\,a.(1930)Pearson, Harris, Treloar, Wilder und
+  Pearson]{pearson1930theory}
+\dinatlabel{Pearson u.\,a. 1930} \textsc{Pearson}, Karl~; \textsc{Harris},
+  J~A.~; \textsc{Treloar}, Alan~E.~; \textsc{Wilder}, Marian~;
+  \textsc{Pearson}, Karl:
+\newblock On the theory of contingency.
+\newblock In: \emph{Journal of the American Statistical Association}
+\newblock 25 (1930), Nr.~171, S.~320--327
 
-\bibitem{voigt2017eu}
-P.~Voigt and A.~Von~dem Bussche, ``The eu general data protection regulation
-  (gdpr),'' {\em A Practical Guide, 1st Ed., Cham: Springer International
-  Publishing}, 2017.
+\bibitem[Sofaer(1999)]{sofaer1999qualitative}
+\dinatlabel{Sofaer 1999} \textsc{Sofaer}, Shoshanna:
+\newblock Qualitative methods: what are they and why use them?
+\newblock In: \emph{Health services research}
+\newblock 34 (1999), Nr.~5 Pt 2, S.~1101
+
+\bibitem[Voigt und Von~dem Bussche(2017)]{voigt2017eu}
+\dinatlabel{Voigt und Von~dem Bussche 2017} \textsc{Voigt}, Paul~;
+  \textsc{Bussche}, Axel Von~dem:
+\newblock The EU General Data Protection Regulation (GDPR).
+\newblock In: \emph{A Practical Guide, 1st Ed., Cham: Springer International
+  Publishing}
+\newblock (2017)
 
 \end{thebibliography}

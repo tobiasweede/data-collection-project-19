@@ -11,7 +11,8 @@ Users' satisfaction about Dalarna University's Homepage
 * ~~ 13.5. or 15.5. 10:00-11:00 second supervisor meeting ~~
 * ~~ 21.5. group peer review ~~
 * ~~ 25.5. send final draft to supervisor ~~
-* 30.5. hand in deadline
+* ~~ 30.5. hand in deadline ~~
+* 02.6. 10:00 - train presentation
 * 03.6. afternoon presentation (mail to Moudoud!)
 
 ## Supervisor
