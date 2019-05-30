@@ -164,11 +164,7 @@ The analysis will heavily relate on cross tables. Besides means and medians, $\c
 \begin{equation}
 K = \sqrt{\frac{\chi^2}{n+\chi^2}}
 \label{eq:contingency-coefficient}
-\end{equation}@Misc{,
-  Owner                    = {homaar},
-  Timestamp                = {2019.05.14}
-}
-
+\end{equation}
 
 A pairwise correlation coefficient \citep{lee1988thirteen} (as shown in equation \ref{eq:correlation}) is computed to show if some of the questions can be abandoned in the future.
 
@@ -211,14 +207,7 @@ As we research European Union subjects, and we store their personal data, we nee
 
 The GDPR demands from the researchers that the handle of personal data should be lawful, fair and transparent. These guidelines can be found at universities and at other research groups.
 
-In order to deal with the personal data, first of all, the subject should give a consent. The consent should be:
-\begin{itemize}
-	\item Freely given
-	\item Specific
-	\item Informative
-	\item Unambigous
-	\item An affirmative action	
-\end{itemize}
+In order to deal with the personal data, first of all, the subject should give a consent. The consent should be freely given, specific, informative, unambigous and be an affirmative action.
 
 There can be other bases for personal data processing (Contract, Legal Obligation, Vital interest, Public task, Legitimate interest), but we are not dealing with these here in detail.
 
@@ -299,12 +288,13 @@ We suggested to run standard statistical measurements on the data, in order to k
 
 Ultimately, this document can not give profound advice with respect to the defined research questions, as only the pilot was carried out. Only general consultation can be given. In a first step, for each question as well as the the overall aggregation, a negative metric might be considered as a warning signal (the more negative the worse). A next step would be the investigation of variance. Third, a homogeneous negative response could point to a general issue while a group dependent negative rating might relate to possible intra-group improvements.
 
-
+\newpage
 \section*{References}
 \bibliographystyle{dinat}
 \renewcommand\refname{\vskip -1cm}
 \bibliography{ST3012_project_report_v19pette_v18tobwe}
 
+\newpage
 \section{Appendices}
 
 \subsection{Survey Guideline}
@@ -330,7 +320,8 @@ Thank you.
 	\item Do you have any improvement suggestions?
 \end{enumerate}
 
-\subsection{Data Import into R}
+\newpage
+\subsection{R source code}
 \begin{lstlisting}[caption={Data Import into R and first analysis steps},label={lst:r-import},language=R]
 # DS project
 ## Analysis of the survey data
